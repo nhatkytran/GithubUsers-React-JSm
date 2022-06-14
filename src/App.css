@@ -1,3 +1,7 @@
+body {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,133 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App {
+  padding: 50px;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-around;
+
+  max-width: 600px;
+  background-color: #eeeeee;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.user-info-item {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.user {
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 20px 20px 30px;
+  border: 1px solid black;
+}
+
+.user-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.user-name {
+  margin: 10px 0 20px;
+}
+
+.user-follow,
+.user-follow:visited,
+.user-follow:active {
+  background-color: #eeeeee;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.followers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.follower {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 360px;
+  margin: 5px;
+  padding: 10px 20px;
+  border: 1px solid #eeeeee;
+}
+
+.follower-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.follower-link,
+.follower-link:visited,
+.follower-link:active {
+  background-color: #eeeeee;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.repos,
+.stars-and-forks {
+  max-width: 100%;
+  width: 600px;
+  margin: 10px auto;
+  border: 1px solid black;
+}
+
+.requests {
+  margin-left: 10px;
+}
+
+.error {
+  margin: 10px;
+}
+
+.error.wrong {
+  color: red;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.navbar-user-name {
+  margin: 0 10px;
 }

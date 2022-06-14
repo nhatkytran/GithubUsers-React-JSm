@@ -1,13 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import GithubContextProvider from "./context/context";
+import { Auth0Provider } from "@auth0/auth0-react";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// dev-65m8tll3.us.auth0.com
+// lf2OGIG3jg80DjHOPosveyr8O04K6Xwf
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Auth0Provider
+      domain="dev-65m8tll3.us.auth0.com"
+      clientId="lf2OGIG3jg80DjHOPosveyr8O04K6Xwf"
+      redirectUri={window.location.origin}
+    >
+      <GithubContextProvider>
+        <App />
+      </GithubContextProvider>
+    </Auth0Provider>
   </React.StrictMode>
 );
 
